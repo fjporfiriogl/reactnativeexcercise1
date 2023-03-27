@@ -1,0 +1,1163 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the list correctly 1`] = `
+<View
+  style={
+    {
+      "columnGap": 20,
+      "flex": 1,
+      "padding": "5%",
+    }
+  }
+>
+  <RCTScrollView
+    data={
+      [
+        {
+          "description": "Using TypeScript while building an app in React Native reduces the dependency on PropTypes validation and lets you validate any possible errors on time.",
+          "id": "bp-1",
+          "priority": "medium",
+          "title": "Use Typescript",
+        },
+        {
+          "description": "The demand for responsive apps and web pages is high in the market and by using responsive style properties one can easily build a highly responsive React Native app. This ensures that the mobile app is compatible with various devices and platforms with different screen sizes and provides the audiences with the same quality experience.
+
+You just need to follow these simple steps:
+
+Step 1: List out the target devices on which your React Native app will run
+
+Step 2: Categorize their respective screen sizes like small mobile screens, medium screens like tabs, bigger screens like laptops and others
+
+Step 3: Define the respective breakpoints for the various screen sizes as shown below -
+
+export const theme = {
+
+smallPhone: 0,
+
+phone: 290,
+
+tablet: 750,
+
+}
+
+This will ensure that any device within 290 pixels width will be categorized as a small phone device, devices below 750 pixels width will be regular mobile devices and devices with higher width than that will be categorized as tablets.
+",
+          "id": "bp-2",
+          "priority": "high",
+          "title": "Leverage Responsive Style Properties",
+        },
+        {
+          "description": "The design of your app is the first thing that your customers will notice. And no matter how good your React Native app’s functionalities are, if it doesn’t look that appealing to the customers, half of its purpose will be lost.
+
+One of the React Native best practices is to use a compact design system to ensure the look and feel of your React Native app is good enough to have competitive advantages in the present market.
+
+A design system refers to a set of predefined rules deciding the style, look and feel of your React Native app. Here are some of the key areas to focus on while working on a design system -
+
+➡️ Spacing: Always focus on giving equal and consistent spacing for the texts, icons, images, or any other components used throughout your React Native app during the design process. It will ensure a coherent look for the app on any device.
+
+➡️Color: Choosing the right color combination majorly defines how your React Native app will look. You can use Color Palettes and name the colors as per the preferred conventions so that it becomes easy for you to understand how a specific color combination on your app will look like.
+
+For instance, you can name ‘Notify’ to the color to be used in notification pop up or can name ‘Primary’ to denote the primary color to be used in your app and so on.
+
+➡️Typography: You must focus on the typography along with font size, color and placement throughout your React Native app pages to ensure there is no disambiguation and they look good irrespective of the screen size or device type.",
+          "id": "bp-3",
+          "priority": "medium",
+          "title": "Utilize a Compact Design system",
+        },
+        {
+          "description": "This is one of the React Native best practices that help you style your React Native app better. React Native comes with an in-built API (Application Programming Interface) that helps you write platform-centric codes.
+
+All you need to do is use the Platform.OS automatically detect a specific OS like Android or iOS and apply the suitable styles for that specific platform.
+
+Below is an example of how to code it:
+
+const styles = StyleSheet.create({
+
+container: {
+
+flex: 1,
+
+…Platform.select ({
+
+ios: {
+
+fontFamily: ‘Arial’,
+
+},
+
+android: {
+
+fontFamily: ‘Roboto’,
+
+},
+
+}),
+
+},
+
+});",
+          "id": "bp-4",
+          "priority": "high",
+          "title": "Use Platform-Centric Styles",
+        },
+        {
+          "description": "You should always assign a unique key to every element you use while building an app in React Native. This will simplify the execution process especially when you need to deal with the components like lists.
+
+Below is an example:
+
+const todoItems = todos.map ((todo) =>
+
+<li key={todo._id}>
+
+{todo.text}
+
+</li>
+
+);",
+          "id": "bp-5",
+          "priority": "high",
+          "title": "Use a Unique Key for Every Element",
+        },
+        {
+          "description": "It is crucial to manage the static image resources properly while building an app in React Native. You need to statically define your images so that there is no time and resource wastage while dealing with redundant static file events. Here’s an example of how to do it right:
+
+var icon = this.props.active
+
+? require( ‘ . / icon-active.png’ )
+
+:  require( ‘ . / icon-inactive.png’ );
+
+<Image source={icon} />;",
+          "id": "bp-6",
+          "priority": "medium",
+          "title": "Manage Static Image Resources Properly",
+        },
+        {
+          "description": "An Alias helps you simplify the imports in projects with multiple sub-folders. It offers the proper path options for an object with value pairs. While building an app in React Native, you need to create Alias in the best possible way to prevent the issues of nested imports. It is recommended to use babel-plugin-module-resolver to avoid this issue.",
+          "id": "bp-7",
+          "priority": "low",
+          "title": "Focus on Alias Creation",
+        },
+      ]
+    }
+    getItem={[Function]}
+    getItemCount={[Function]}
+    keyExtractor={[Function]}
+    onContentSizeChange={[Function]}
+    onLayout={[Function]}
+    onMomentumScrollBegin={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    stickyHeaderIndices={[]}
+    viewabilityConfigCallbackPairs={[]}
+  >
+    <View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            [
+              {
+                "backgroundColor": "#edf2f4",
+                "borderRadius": 10,
+                "elevation": 4,
+                "flexDirection": "row",
+                "marginVertical": 5,
+                "padding": 10,
+              },
+              {
+                "height": 200,
+              },
+            ]
+          }
+        >
+          <View
+            style={
+              [
+                {
+                  "alignSelf": "center",
+                  "backgroundColor": "red",
+                  "borderColor": "red",
+                  "borderRadius": 20,
+                  "height": 40,
+                  "width": 40,
+                },
+                {
+                  "backgroundColor": "yellow",
+                },
+              ]
+            }
+          />
+          <View
+            style={
+              {
+                "flex": 1,
+                "paddingLeft": "3%",
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "display": "flex",
+                  "fontSize": 20,
+                  "fontWeight": "bold",
+                  "marginBottom": 10,
+                }
+              }
+            >
+              Use Typescript
+            </Text>
+            <Text
+              numberOfLines={4}
+              style={
+                {
+                  "flex": 1,
+                  "fontSize": 16,
+                }
+              }
+            >
+              Using TypeScript while building an app in React Native reduces the dependency on PropTypes validation and lets you validate any possible errors on time.
+            </Text>
+            <View
+              style={
+                {
+                  "borderColor": "#f4a261",
+                  "borderStyle": "dashed",
+                  "borderWidth": 3,
+                }
+              }
+            >
+              <View
+                accessibilityState={
+                  {
+                    "busy": undefined,
+                    "checked": undefined,
+                    "disabled": undefined,
+                    "expanded": undefined,
+                    "selected": undefined,
+                  }
+                }
+                accessibilityValue={
+                  {
+                    "max": undefined,
+                    "min": undefined,
+                    "now": undefined,
+                    "text": undefined,
+                  }
+                }
+                accessible={true}
+                collapsable={false}
+                focusable={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  {
+                    "alignItems": "center",
+                  }
+                }
+              >
+                <Text
+                  style={
+                    {
+                      "color": "#e63946",
+                      "fontSize": 18,
+                      "fontWeight": 900,
+                    }
+                  }
+                >
+                  Show More
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            [
+              {
+                "backgroundColor": "#edf2f4",
+                "borderRadius": 10,
+                "elevation": 4,
+                "flexDirection": "row",
+                "marginVertical": 5,
+                "padding": 10,
+              },
+              {
+                "height": 200,
+              },
+            ]
+          }
+        >
+          <View
+            style={
+              [
+                {
+                  "alignSelf": "center",
+                  "backgroundColor": "red",
+                  "borderColor": "red",
+                  "borderRadius": 20,
+                  "height": 40,
+                  "width": 40,
+                },
+                {
+                  "backgroundColor": "red",
+                },
+              ]
+            }
+          />
+          <View
+            style={
+              {
+                "flex": 1,
+                "paddingLeft": "3%",
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "display": "flex",
+                  "fontSize": 20,
+                  "fontWeight": "bold",
+                  "marginBottom": 10,
+                }
+              }
+            >
+              Leverage Responsive Style Properties
+            </Text>
+            <Text
+              numberOfLines={4}
+              style={
+                {
+                  "flex": 1,
+                  "fontSize": 16,
+                }
+              }
+            >
+              The demand for responsive apps and web pages is high in the market and by using responsive style properties one can easily build a highly responsive React Native app. This ensures that the mobile app is compatible with various devices and platforms with different screen sizes and provides the audiences with the same quality experience.
+
+You just need to follow these simple steps:
+
+Step 1: List out the target devices on which your React Native app will run
+
+Step 2: Categorize their respective screen sizes like small mobile screens, medium screens like tabs, bigger screens like laptops and others
+
+Step 3: Define the respective breakpoints for the various screen sizes as shown below -
+
+export const theme = {
+
+smallPhone: 0,
+
+phone: 290,
+
+tablet: 750,
+
+}
+
+This will ensure that any device within 290 pixels width will be categorized as a small phone device, devices below 750 pixels width will be regular mobile devices and devices with higher width than that will be categorized as tablets.
+
+            </Text>
+            <View
+              style={
+                {
+                  "borderColor": "#f4a261",
+                  "borderStyle": "dashed",
+                  "borderWidth": 3,
+                }
+              }
+            >
+              <View
+                accessibilityState={
+                  {
+                    "busy": undefined,
+                    "checked": undefined,
+                    "disabled": undefined,
+                    "expanded": undefined,
+                    "selected": undefined,
+                  }
+                }
+                accessibilityValue={
+                  {
+                    "max": undefined,
+                    "min": undefined,
+                    "now": undefined,
+                    "text": undefined,
+                  }
+                }
+                accessible={true}
+                collapsable={false}
+                focusable={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  {
+                    "alignItems": "center",
+                  }
+                }
+              >
+                <Text
+                  style={
+                    {
+                      "color": "#e63946",
+                      "fontSize": 18,
+                      "fontWeight": 900,
+                    }
+                  }
+                >
+                  Show More
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            [
+              {
+                "backgroundColor": "#edf2f4",
+                "borderRadius": 10,
+                "elevation": 4,
+                "flexDirection": "row",
+                "marginVertical": 5,
+                "padding": 10,
+              },
+              {
+                "height": 200,
+              },
+            ]
+          }
+        >
+          <View
+            style={
+              [
+                {
+                  "alignSelf": "center",
+                  "backgroundColor": "red",
+                  "borderColor": "red",
+                  "borderRadius": 20,
+                  "height": 40,
+                  "width": 40,
+                },
+                {
+                  "backgroundColor": "yellow",
+                },
+              ]
+            }
+          />
+          <View
+            style={
+              {
+                "flex": 1,
+                "paddingLeft": "3%",
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "display": "flex",
+                  "fontSize": 20,
+                  "fontWeight": "bold",
+                  "marginBottom": 10,
+                }
+              }
+            >
+              Utilize a Compact Design system
+            </Text>
+            <Text
+              numberOfLines={4}
+              style={
+                {
+                  "flex": 1,
+                  "fontSize": 16,
+                }
+              }
+            >
+              The design of your app is the first thing that your customers will notice. And no matter how good your React Native app’s functionalities are, if it doesn’t look that appealing to the customers, half of its purpose will be lost.
+
+One of the React Native best practices is to use a compact design system to ensure the look and feel of your React Native app is good enough to have competitive advantages in the present market.
+
+A design system refers to a set of predefined rules deciding the style, look and feel of your React Native app. Here are some of the key areas to focus on while working on a design system -
+
+➡️ Spacing: Always focus on giving equal and consistent spacing for the texts, icons, images, or any other components used throughout your React Native app during the design process. It will ensure a coherent look for the app on any device.
+
+➡️Color: Choosing the right color combination majorly defines how your React Native app will look. You can use Color Palettes and name the colors as per the preferred conventions so that it becomes easy for you to understand how a specific color combination on your app will look like.
+
+For instance, you can name ‘Notify’ to the color to be used in notification pop up or can name ‘Primary’ to denote the primary color to be used in your app and so on.
+
+➡️Typography: You must focus on the typography along with font size, color and placement throughout your React Native app pages to ensure there is no disambiguation and they look good irrespective of the screen size or device type.
+            </Text>
+            <View
+              style={
+                {
+                  "borderColor": "#f4a261",
+                  "borderStyle": "dashed",
+                  "borderWidth": 3,
+                }
+              }
+            >
+              <View
+                accessibilityState={
+                  {
+                    "busy": undefined,
+                    "checked": undefined,
+                    "disabled": undefined,
+                    "expanded": undefined,
+                    "selected": undefined,
+                  }
+                }
+                accessibilityValue={
+                  {
+                    "max": undefined,
+                    "min": undefined,
+                    "now": undefined,
+                    "text": undefined,
+                  }
+                }
+                accessible={true}
+                collapsable={false}
+                focusable={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  {
+                    "alignItems": "center",
+                  }
+                }
+              >
+                <Text
+                  style={
+                    {
+                      "color": "#e63946",
+                      "fontSize": 18,
+                      "fontWeight": 900,
+                    }
+                  }
+                >
+                  Show More
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            [
+              {
+                "backgroundColor": "#edf2f4",
+                "borderRadius": 10,
+                "elevation": 4,
+                "flexDirection": "row",
+                "marginVertical": 5,
+                "padding": 10,
+              },
+              {
+                "height": 200,
+              },
+            ]
+          }
+        >
+          <View
+            style={
+              [
+                {
+                  "alignSelf": "center",
+                  "backgroundColor": "red",
+                  "borderColor": "red",
+                  "borderRadius": 20,
+                  "height": 40,
+                  "width": 40,
+                },
+                {
+                  "backgroundColor": "red",
+                },
+              ]
+            }
+          />
+          <View
+            style={
+              {
+                "flex": 1,
+                "paddingLeft": "3%",
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "display": "flex",
+                  "fontSize": 20,
+                  "fontWeight": "bold",
+                  "marginBottom": 10,
+                }
+              }
+            >
+              Use Platform-Centric Styles
+            </Text>
+            <Text
+              numberOfLines={4}
+              style={
+                {
+                  "flex": 1,
+                  "fontSize": 16,
+                }
+              }
+            >
+              This is one of the React Native best practices that help you style your React Native app better. React Native comes with an in-built API (Application Programming Interface) that helps you write platform-centric codes.
+
+All you need to do is use the Platform.OS automatically detect a specific OS like Android or iOS and apply the suitable styles for that specific platform.
+
+Below is an example of how to code it:
+
+const styles = StyleSheet.create({
+
+container: {
+
+flex: 1,
+
+…Platform.select ({
+
+ios: {
+
+fontFamily: ‘Arial’,
+
+},
+
+android: {
+
+fontFamily: ‘Roboto’,
+
+},
+
+}),
+
+},
+
+});
+            </Text>
+            <View
+              style={
+                {
+                  "borderColor": "#f4a261",
+                  "borderStyle": "dashed",
+                  "borderWidth": 3,
+                }
+              }
+            >
+              <View
+                accessibilityState={
+                  {
+                    "busy": undefined,
+                    "checked": undefined,
+                    "disabled": undefined,
+                    "expanded": undefined,
+                    "selected": undefined,
+                  }
+                }
+                accessibilityValue={
+                  {
+                    "max": undefined,
+                    "min": undefined,
+                    "now": undefined,
+                    "text": undefined,
+                  }
+                }
+                accessible={true}
+                collapsable={false}
+                focusable={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  {
+                    "alignItems": "center",
+                  }
+                }
+              >
+                <Text
+                  style={
+                    {
+                      "color": "#e63946",
+                      "fontSize": 18,
+                      "fontWeight": 900,
+                    }
+                  }
+                >
+                  Show More
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            [
+              {
+                "backgroundColor": "#edf2f4",
+                "borderRadius": 10,
+                "elevation": 4,
+                "flexDirection": "row",
+                "marginVertical": 5,
+                "padding": 10,
+              },
+              {
+                "height": 200,
+              },
+            ]
+          }
+        >
+          <View
+            style={
+              [
+                {
+                  "alignSelf": "center",
+                  "backgroundColor": "red",
+                  "borderColor": "red",
+                  "borderRadius": 20,
+                  "height": 40,
+                  "width": 40,
+                },
+                {
+                  "backgroundColor": "red",
+                },
+              ]
+            }
+          />
+          <View
+            style={
+              {
+                "flex": 1,
+                "paddingLeft": "3%",
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "display": "flex",
+                  "fontSize": 20,
+                  "fontWeight": "bold",
+                  "marginBottom": 10,
+                }
+              }
+            >
+              Use a Unique Key for Every Element
+            </Text>
+            <Text
+              numberOfLines={4}
+              style={
+                {
+                  "flex": 1,
+                  "fontSize": 16,
+                }
+              }
+            >
+              You should always assign a unique key to every element you use while building an app in React Native. This will simplify the execution process especially when you need to deal with the components like lists.
+
+Below is an example:
+
+const todoItems = todos.map ((todo) =&gt;
+
+&lt;li key={todo._id}&gt;
+
+{todo.text}
+
+&lt;/li&gt;
+
+);
+            </Text>
+            <View
+              style={
+                {
+                  "borderColor": "#f4a261",
+                  "borderStyle": "dashed",
+                  "borderWidth": 3,
+                }
+              }
+            >
+              <View
+                accessibilityState={
+                  {
+                    "busy": undefined,
+                    "checked": undefined,
+                    "disabled": undefined,
+                    "expanded": undefined,
+                    "selected": undefined,
+                  }
+                }
+                accessibilityValue={
+                  {
+                    "max": undefined,
+                    "min": undefined,
+                    "now": undefined,
+                    "text": undefined,
+                  }
+                }
+                accessible={true}
+                collapsable={false}
+                focusable={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  {
+                    "alignItems": "center",
+                  }
+                }
+              >
+                <Text
+                  style={
+                    {
+                      "color": "#e63946",
+                      "fontSize": 18,
+                      "fontWeight": 900,
+                    }
+                  }
+                >
+                  Show More
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            [
+              {
+                "backgroundColor": "#edf2f4",
+                "borderRadius": 10,
+                "elevation": 4,
+                "flexDirection": "row",
+                "marginVertical": 5,
+                "padding": 10,
+              },
+              {
+                "height": 200,
+              },
+            ]
+          }
+        >
+          <View
+            style={
+              [
+                {
+                  "alignSelf": "center",
+                  "backgroundColor": "red",
+                  "borderColor": "red",
+                  "borderRadius": 20,
+                  "height": 40,
+                  "width": 40,
+                },
+                {
+                  "backgroundColor": "yellow",
+                },
+              ]
+            }
+          />
+          <View
+            style={
+              {
+                "flex": 1,
+                "paddingLeft": "3%",
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "display": "flex",
+                  "fontSize": 20,
+                  "fontWeight": "bold",
+                  "marginBottom": 10,
+                }
+              }
+            >
+              Manage Static Image Resources Properly
+            </Text>
+            <Text
+              numberOfLines={4}
+              style={
+                {
+                  "flex": 1,
+                  "fontSize": 16,
+                }
+              }
+            >
+              It is crucial to manage the static image resources properly while building an app in React Native. You need to statically define your images so that there is no time and resource wastage while dealing with redundant static file events. Here’s an example of how to do it right:
+
+var icon = this.props.active
+
+? require( ‘ . / icon-active.png’ )
+
+:  require( ‘ . / icon-inactive.png’ );
+
+&lt;Image source={icon} /&gt;;
+            </Text>
+            <View
+              style={
+                {
+                  "borderColor": "#f4a261",
+                  "borderStyle": "dashed",
+                  "borderWidth": 3,
+                }
+              }
+            >
+              <View
+                accessibilityState={
+                  {
+                    "busy": undefined,
+                    "checked": undefined,
+                    "disabled": undefined,
+                    "expanded": undefined,
+                    "selected": undefined,
+                  }
+                }
+                accessibilityValue={
+                  {
+                    "max": undefined,
+                    "min": undefined,
+                    "now": undefined,
+                    "text": undefined,
+                  }
+                }
+                accessible={true}
+                collapsable={false}
+                focusable={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  {
+                    "alignItems": "center",
+                  }
+                }
+              >
+                <Text
+                  style={
+                    {
+                      "color": "#e63946",
+                      "fontSize": 18,
+                      "fontWeight": 900,
+                    }
+                  }
+                >
+                  Show More
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            [
+              {
+                "backgroundColor": "#edf2f4",
+                "borderRadius": 10,
+                "elevation": 4,
+                "flexDirection": "row",
+                "marginVertical": 5,
+                "padding": 10,
+              },
+              {
+                "height": 200,
+              },
+            ]
+          }
+        >
+          <View
+            style={
+              [
+                {
+                  "alignSelf": "center",
+                  "backgroundColor": "red",
+                  "borderColor": "red",
+                  "borderRadius": 20,
+                  "height": 40,
+                  "width": 40,
+                },
+                {
+                  "backgroundColor": "gray",
+                },
+              ]
+            }
+          />
+          <View
+            style={
+              {
+                "flex": 1,
+                "paddingLeft": "3%",
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "display": "flex",
+                  "fontSize": 20,
+                  "fontWeight": "bold",
+                  "marginBottom": 10,
+                }
+              }
+            >
+              Focus on Alias Creation
+            </Text>
+            <Text
+              numberOfLines={4}
+              style={
+                {
+                  "flex": 1,
+                  "fontSize": 16,
+                }
+              }
+            >
+              An Alias helps you simplify the imports in projects with multiple sub-folders. It offers the proper path options for an object with value pairs. While building an app in React Native, you need to create Alias in the best possible way to prevent the issues of nested imports. It is recommended to use babel-plugin-module-resolver to avoid this issue.
+            </Text>
+            <View
+              style={
+                {
+                  "borderColor": "#f4a261",
+                  "borderStyle": "dashed",
+                  "borderWidth": 3,
+                }
+              }
+            >
+              <View
+                accessibilityState={
+                  {
+                    "busy": undefined,
+                    "checked": undefined,
+                    "disabled": undefined,
+                    "expanded": undefined,
+                    "selected": undefined,
+                  }
+                }
+                accessibilityValue={
+                  {
+                    "max": undefined,
+                    "min": undefined,
+                    "now": undefined,
+                    "text": undefined,
+                  }
+                }
+                accessible={true}
+                collapsable={false}
+                focusable={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  {
+                    "alignItems": "center",
+                  }
+                }
+              >
+                <Text
+                  style={
+                    {
+                      "color": "#e63946",
+                      "fontSize": 18,
+                      "fontWeight": 900,
+                    }
+                  }
+                >
+                  Show More
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;

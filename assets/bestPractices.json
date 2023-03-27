@@ -1,0 +1,44 @@
+[
+    {
+     "id": "bp-1",
+    "title": "Use Typescript",
+    "description": "Using TypeScript while building an app in React Native reduces the dependency on PropTypes validation and lets you validate any possible errors on time.",
+    "priority": "medium"        
+},
+    {
+     "id": "bp-2",
+    "title": "Leverage Responsive Style Properties",
+    "description": "The demand for responsive apps and web pages is high in the market and by using responsive style properties one can easily build a highly responsive React Native app. This ensures that the mobile app is compatible with various devices and platforms with different screen sizes and provides the audiences with the same quality experience.\n\nYou just need to follow these simple steps:\n\nStep 1: List out the target devices on which your React Native app will run\n\nStep 2: Categorize their respective screen sizes like small mobile screens, medium screens like tabs, bigger screens like laptops and others\n\nStep 3: Define the respective breakpoints for the various screen sizes as shown below -\n\nexport const theme = {\n\nsmallPhone: 0,\n\nphone: 290,\n\ntablet: 750,\n\n}\n\nThis will ensure that any device within 290 pixels width will be categorized as a small phone device, devices below 750 pixels width will be regular mobile devices and devices with higher width than that will be categorized as tablets.\n"
+    ,
+    "priority": "high" },
+    {
+     "id": "bp-3",
+    "title": "Utilize a Compact Design system",
+    "description": "The design of your app is the first thing that your customers will notice. And no matter how good your React Native app’s functionalities are, if it doesn’t look that appealing to the customers, half of its purpose will be lost.\n\nOne of the React Native best practices is to use a compact design system to ensure the look and feel of your React Native app is good enough to have competitive advantages in the present market.\n\nA design system refers to a set of predefined rules deciding the style, look and feel of your React Native app. Here are some of the key areas to focus on while working on a design system -\n\n➡️ Spacing: Always focus on giving equal and consistent spacing for the texts, icons, images, or any other components used throughout your React Native app during the design process. It will ensure a coherent look for the app on any device.\n\n➡️Color: Choosing the right color combination majorly defines how your React Native app will look. You can use Color Palettes and name the colors as per the preferred conventions so that it becomes easy for you to understand how a specific color combination on your app will look like.\n\nFor instance, you can name ‘Notify’ to the color to be used in notification pop up or can name ‘Primary’ to denote the primary color to be used in your app and so on.\n\n➡️Typography: You must focus on the typography along with font size, color and placement throughout your React Native app pages to ensure there is no disambiguation and they look good irrespective of the screen size or device type."
+    ,
+    "priority": "medium" },
+    {
+     "id": "bp-4",
+    "title": "Use Platform-Centric Styles",
+    "description": "This is one of the React Native best practices that help you style your React Native app better. React Native comes with an in-built API (Application Programming Interface) that helps you write platform-centric codes.\n\nAll you need to do is use the Platform.OS automatically detect a specific OS like Android or iOS and apply the suitable styles for that specific platform.\n\nBelow is an example of how to code it:\n\nconst styles = StyleSheet.create({\n\ncontainer: {\n\nflex: 1,\n\n…Platform.select ({\n\nios: {\n\nfontFamily: ‘Arial’,\n\n},\n\nandroid: {\n\nfontFamily: ‘Roboto’,\n\n},\n\n}),\n\n},\n\n});"
+    ,
+    "priority": "high" },
+    {
+     "id": "bp-5",
+    "title": "Use a Unique Key for Every Element",
+    "description": "You should always assign a unique key to every element you use while building an app in React Native. This will simplify the execution process especially when you need to deal with the components like lists.\n\nBelow is an example:\n\nconst todoItems = todos.map ((todo) =>\n\n<li key={todo._id}>\n\n{todo.text}\n\n</li>\n\n);"
+    ,
+    "priority": "high" },
+    {
+     "id": "bp-6",
+    "title": "Manage Static Image Resources Properly",
+    "description": "It is crucial to manage the static image resources properly while building an app in React Native. You need to statically define your images so that there is no time and resource wastage while dealing with redundant static file events. Here’s an example of how to do it right:\n\nvar icon = this.props.active\n\n? require( ‘ . / icon-active.png’ )\n\n:  require( ‘ . / icon-inactive.png’ );\n\n<Image source={icon} />;"
+    ,
+    "priority": "medium" },
+    {
+     "id": "bp-7",
+    "title": "Focus on Alias Creation",
+    "description": "An Alias helps you simplify the imports in projects with multiple sub-folders. It offers the proper path options for an object with value pairs. While building an app in React Native, you need to create Alias in the best possible way to prevent the issues of nested imports. It is recommended to use babel-plugin-module-resolver to avoid this issue."
+    ,
+    "priority": "low" }
+    ]
